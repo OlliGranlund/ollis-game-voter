@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollis Game Voter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ollis Game Voter</h1>
+        </header>
+
+        <main class="voting-area">
+            <div class="buttons-container" id="buttonsContainer">
+                <button class="vote-btn success-btn" id="successBtn" data-vote="success">Success</button>
+                <button class="vote-btn fail-btn" id="failBtn" data-vote="fail">Fail</button>
+            </div>
+        </main>
+
+        <button class="stats-btn" id="statsBtn">View Stats</button>
+
+        <!-- Notification Popup -->
+        <div class="notification" id="notification">
+            <div class="notification-content">
+                <p>Thank you for your vote</p>
+            </div>
+        </div>
+
+        <!-- Stats Modal -->
+        <div class="modal" id="statsModal">
+            <div class="modal-content">
+                <h2>Vote Statistics</h2>
+                <div class="stats-display">
+                    <div class="stat-item">
+                        <span class="stat-label">Success:</span>
+                        <span class="stat-value" id="successCount">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Fail:</span>
+                        <span class="stat-value" id="failCount">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Total:</span>
+                        <span class="stat-value" id="totalCount">0</span>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="reset-btn" id="resetBtn">Reset Votes</button>
+                    <button class="close-btn" id="closeStatsBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
